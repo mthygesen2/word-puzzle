@@ -6,3 +6,13 @@ var wordPuzzle = (function(texts) {
   return texts.replace(vowels, '-');
 }
 });
+
+$(document).ready(function(){
+  $("form").submit(function(event) {
+  var answer = $("input#userInput").val();
+  var output = wordPuzzle(answer);
+    $(".output").text(output);
+
+    event.preventDefault();
+  });
+});
