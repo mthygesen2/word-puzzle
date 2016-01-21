@@ -1,11 +1,8 @@
 var wordPuzzle = (function(texts) {
-  var puzzleOutput = "";
-  var vowels = ["a","e","i","o","u"];
-  var textSplit = texts.split(" ");
-
-  textSplit.forEach(function(text) {
-      var replaced = text.replace(/vowels/gi, "-");
-      puzzleOutput.push(replaced);
-  })
-  return puzzleOutput;
+  var vowels = /a|e|o|u|i/gi;
+  if(texts > 0) {
+    return "Only works on words";
+  } else {
+  return texts.replace(vowels, '-');
+}
 });
