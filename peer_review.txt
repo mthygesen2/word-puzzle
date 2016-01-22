@@ -1,0 +1,1 @@
+This looks really good! I like the error handling on the numbers, though there are a few more that could be handled. Overall, good job. I think the way you handled your vowel replace was cleaner than ours.

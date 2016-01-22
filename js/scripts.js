@@ -1,6 +1,7 @@
 var wordPuzzle = (function(texts) {
   var vowels = /a|e|o|u|i/gi;
   if(texts > 0) {
+  // this can still be broken with a negative.
     return "Only works on words";
   } else {
   return texts.replace(vowels, '-');
