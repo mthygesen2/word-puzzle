@@ -10,8 +10,10 @@ var wordPuzzle = (function(texts) {
 $(document).ready(function(){
   $("form").submit(function(event) {
   var answer = $("input#userInput").val();
-  var output = wordPuzzle(answer);
-    $(".output").text(output);
+  var vowelsOut = wordPuzzle(answer);
+    $(".puzzleform").toggle();
+    $(".unsolved").toggle();
+    $(".output").text(vowelsOut);
 
     event.preventDefault();
   });
